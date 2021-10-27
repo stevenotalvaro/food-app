@@ -1,9 +1,9 @@
 import React from 'react'
 import classes from './Modal.module.css'
 
-export const Backdrop = () => {
+export const Backdrop = ({handlerCartHide}) => {
     return (
-        <div className={classes.backdrop}>
+        <div onClick={handlerCartHide} className={classes.backdrop}>
             
         </div>
     )

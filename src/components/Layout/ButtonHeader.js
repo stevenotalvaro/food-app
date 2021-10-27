@@ -2,9 +2,9 @@ import React from 'react'
 
 import classes from './ButtonHeader.module.css'
 
-export const ButtonHeader = () => {
+export const ButtonHeader = ({handlerCartShow}) => {
     return (
-        <button className={classes.button}>
+        <button onClick={handlerCartShow} className={classes.button}>
             <span className={classes.icon}> 
                 <svg
                 xmlns='http://www.w3.org/2000/svg'
