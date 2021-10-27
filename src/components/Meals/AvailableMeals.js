@@ -1,4 +1,5 @@
 import React from 'react'
+import { Card } from '../UI/Card';
 import classes from './AvailableMeals.module.css'
 
 const DUMMY_MEALS = [
@@ -33,9 +34,7 @@ export const AvailableMeals = () => {
     return (
         <section className={classes.meals}>
             <ul>
-                {
-                  DUMMY_MEALS.map(meal => <li>{meal.name}</li>)
-                }
+                <Card meals={DUMMY_MEALS} />
             </ul>
         </section>
     )

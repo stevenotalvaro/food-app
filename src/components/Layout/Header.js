@@ -11,7 +11,7 @@ export const Header = () => {
                 <ButtonHeader />
             </header> 
             <div className={classes['main-image']}>
-                <img src={foodImage} alt="food image" />
+                <img src={foodImage} alt="food" />
             </div>
         </>
     )
