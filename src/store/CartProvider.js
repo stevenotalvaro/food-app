@@ -11,8 +11,9 @@ const cartReducer = (state = initialState, action) =>{
     switch (action.type) {
         case 'ADD':
             return{
-                ...state,
-                items: [...action.payload],
+                
+                // items: state.items.concat(action.payload),
+                items: [...state.items, action.payload],
                 totalAmount: state.totalAmount + action.payload.price * action.payload.amount
             }
         case 'REMOVE':
